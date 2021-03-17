@@ -1,0 +1,18 @@
+package  lectures.part1basic
+
+object Recursion extends App{
+
+  def factorial (n:  BigInt): BigInt = {
+   def factHelper(x: BigInt, accumulator: BigInt): BigInt =
+     if(x<=1) accumulator
+     else factHelper(x-1,x * accumulator) //Tail recursion = use recursive call as the last expression
+
+    factHelper(n,1)
+
+    }
+  println(factorial(5000))
+
+
+
+
+}
