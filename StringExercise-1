@@ -1,1 +1,17 @@
 //Write a Scala program to get the character at the given index within a given String. Also print the length of the string.
+object Scala_String {
+
+  def main(args: Array[String]): Unit = {
+    var str = "Scala Exercises!";
+    println("Original String = " + str);
+    // Get the character at positions 0 and 10.
+    var index1 = str.charAt(0);
+    var index2 = str.charAt(10);
+    var index3 = str.charAt(15);
+
+    // Print out the results
+    println(s"The character at position 0 is ${index1}");
+    println(s"The character at position 10 is ${index2}");
+    println(s"The character at position 15 is ${index3}");
+    println(s"Length of the string: ${str.length}")
+  }
